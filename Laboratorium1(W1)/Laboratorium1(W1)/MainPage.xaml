@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Laboratorium1_W1_.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Laboratorium1_W1_"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:Name="Clear_button" Content="Wyczyść" Margin="80,297,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click" Height="40"/>
+        <RatingControl x:Name="RatingBar2" ValueChanged="RatingChanged" Margin="191,148,0,0" HorizontalAlignment="Left" Width="112" Height="32" VerticalAlignment="Top"/>
+        <RatingControl x:Name="RatingBar1" ValueChanged="RatingChanged" Margin="191,98,0,0" HorizontalAlignment="Left" Width="112" Height="32" VerticalAlignment="Top" />
+        <TextBlock HorizontalAlignment="Left" Margin="50,100,0,0" Text="Ocen danie" TextWrapping="Wrap" VerticalAlignment="Top" IsTextSelectionEnabled="True" Height="23"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsTextSelectionEnabled="True" Height="20"><Run Text="Ocen obs"/><Run Text="ługe"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="50,50,0,0" Text="Rachunek" TextWrapping="Wrap" VerticalAlignment="Top" IsTextSelectionEnabled="True" Height="23"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,200,0,0" Text="Napiwki" TextWrapping="Wrap" VerticalAlignment="Top" IsTextSelectionEnabled="True" Height="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="122,200,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="Text_rachunek" Margin="122,43,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="TextBox_TextChanged" HorizontalTextAlignment="Right" HorizontalAlignment="Left" Width="181"/>
+        <TextBox x:Name="Text_Napiwki" HorizontalAlignment="Left" Margin="122,193,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" IsReadOnly="True"/>
+
+    </Grid>
+</Page>
